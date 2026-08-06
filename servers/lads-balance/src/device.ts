@@ -57,7 +57,7 @@ export class BalanceDeviceImpl {
         // This ensures the OPC-UA client can read it before DeviceInfo event
         const initialSerialNumber = config.protocol === BalanceProtocols.Simulator ? "47110815" : "Unknown"
         const initialOptions: LADSComponentOptions = {
-            manufacturer: "Unknown",
+            manufacturer: config.manufacturer ?? "Unknown",
             model: "Unknown",
             serialNumber: initialSerialNumber,
             componentName: config.name,
@@ -109,7 +109,7 @@ export class BalanceDeviceImpl {
     setNameplate(deviceInfo: DeviceInfo) {
         // initialize nameplates
         const deviceOptions: LADSComponentOptions = {
-            manufacturer: deviceInfo.manufacturer,
+            manufacturer: this.config.manufacturer ?? deviceInfo.manufacturer,
             model: deviceInfo.model,
             serialNumber: deviceInfo.serialNumber || "Unknown",
             softwareRevision: deviceInfo.firmware || "",

@@ -3,9 +3,10 @@
     "port": 4844,
     "devices": [
         {
-            "serialPort": "/dev/tty.usbmodem",
+            "serialPort": "/dev/ttyACM0",
             "protocol": "SICS",
             "name": "Sartorius Cubis CUB524S-1S1-IC",
+            "manufacturer": "Sartorius",
             "enabled": true
         }
     ]

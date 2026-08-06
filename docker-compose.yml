@@ -1,0 +1,17 @@
+services:
+  lads-balance:
+    build:
+      context: .
+    image: lads-balance
+    # host networking: OPC UA endpoint-URLs und mDNS/GDS-Registrierung
+    # funktionieren so ohne Port-/Hostname-Verrenkungen
+    network_mode: host
+    environment:
+      - PORT=4844
+    devices:
+      # Waage muss vorher via usbipd an WSL attached sein (siehe README)
+      - /dev/ttyACM0:/dev/ttyACM0
+    volumes:
+      # config änderbar ohne Rebuild
+      - ./servers/lads-balance/src/config.json:/app/out/servers/lads-balance/src/config.json:ro
+    restart: unless-stopped

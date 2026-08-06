@@ -48,6 +48,8 @@ export interface BalanceDeviceConfig {
     protocol: string
     name: string
     enabled?: boolean
+    // overrides the driver-reported manufacturer (SICS cannot query it, e.g. Sartorius devices speaking SICS)
+    manufacturer?: string
 }
 
 // Type guard
