@@ -3,22 +3,10 @@
     "port": 4844,
     "devices": [
         {
-            "serialPort": "",
-            "protocol": "Simulator",
-            "name": "My Simulated Balance",
-            "enabled": true
-        },
-        {
-            "serialPort": "/dev/tty.usbmodem00294063041",
-            "protocol": "SBI",
-            "name": "My Sartorius Balance",
-            "enabled": false
-        },
-        {
-            "serialPort": "/dev/tty.PL2303-USBtoUART1130",
+            "serialPort": "/dev/tty.usbmodem",
             "protocol": "SICS",
-            "name": "My Mettler Toledo Balance",
-            "enabled": false
+            "name": "Sartorius Cubis CUB524S-1S1-IC",
+            "enabled": true
         }
     ]
 }
