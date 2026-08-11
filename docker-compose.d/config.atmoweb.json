@@ -1,12 +1,12 @@
 {
     "port": 4843,
-    "serialNumber": "ESS-MEMMERT",
+    "serialNumber": "B226.1742",
     "devices": [
         {
-            "baseUrl": "http://192.168.1.21",
-            "name": "My Memmert Essentim",
+            "baseUrl": "http://10.200.4.25",
+            "name": "Memmert ProductStudio",
             "recorderInterval": 5,
-            "hierachicalLocation": "DE/Munich/Schragenhofstr_35/A/Office"
+            "hierachicalLocation": "DE/Wangen/Building_24/24_00_00_rechts"
         }
     ]
 }
