@@ -3,7 +3,7 @@
     "serialNumber": "B226.1742",
     "devices": [
         {
-            "baseUrl": "http://10.200.4.25",
+            "baseUrl": "http://192.168.100.100",
             "name": "Memmert ProductStudio",
             "recorderInterval": 5,
             "hierachicalLocation": "DE/Wangen/Building_24/24_00_00_rechts"
